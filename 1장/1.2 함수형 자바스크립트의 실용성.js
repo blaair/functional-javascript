@@ -42,9 +42,9 @@ for (var i = 0, len = temp_users.length; i < len; i++) {
 // [ 'ID', 'BJ', 'JM' ]
 
 /*
- * 중복을 제거하자.
+ * 위 코드에서 중복을 제거하자.
  */
-// 1.2.1 회원 목록 중 여러 명 찾기
+/* filter 사용 */
 function filter(list, predicate) {
   var new_list = [];
   for (var i = 0, len = list.length; i < len; i++) {
@@ -77,3 +77,4 @@ for (var i = 0, len = under_over_30.length; i < len; i++) {
   names.push(under_over_30[i].name);
 }
 console.log(names);
+// [ 'ID', 'BJ', 'JM' ]
